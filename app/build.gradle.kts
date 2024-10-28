@@ -15,6 +15,10 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters.addAll(arrayOf("arm64-v8a","armeabi-v7a"))
+        }
     }
 
     buildTypes {
@@ -36,7 +40,8 @@ android {
 }
 
 dependencies {
-    implementation(files("libs/*.jar"))
+    implementation(files("libs/arcsoft_face.jar"))
+    implementation(files("libs/arcsoft_image_util.jar"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
