@@ -45,4 +45,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("com.github.bumptech.glide:glide:4.9.0")
+    implementation("io.reactivex.rxjava2:rxjava:2.2.6")
+    implementation("io.reactivex.rxjava2:rxandroid:2.1.0")
+    implementation("io.github.scwang90:refresh-layout-kernel:2.1.0")
+    implementation("io.github.scwang90:refresh-footer-classics:2.1.0")
+    implementation("io.github.scwang90:refresh-header-classics:2.1.0")
 }
