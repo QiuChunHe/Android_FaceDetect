@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.moli.faceDetect"
-    compileSdk = 34
+    compileSdk = 29
 
     defaultConfig {
         applicationId = "com.moli.faceDetect"

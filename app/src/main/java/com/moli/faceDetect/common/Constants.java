@@ -1,4 +1,4 @@
-package com.arcsoft.arcfacedemo.common;
+package com.moli.faceDetect.common;
 
 public class Constants {
 

@@ -1,12 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.HomeActivity">
+    tools:context=".Activity.HomeActivity"
+    android:background="@color/view_bg" >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
+        <FrameLayout
+            android:id="@+id/face_left_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/face_list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/color_bg_name"/>
+
+            <com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/home_face_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/single_camera_recycler_view_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <com.scwang.smart.refresh.footer.ClassicsFooter
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+            <!--            <android.support.v7.widget.RecyclerView-->
+            <!--                android:id="@+id/single_camera_recycler_view_person"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:layout_marginStart="20dp"-->
+            <!--                android:layout_marginEnd="5dp"-->
+            <!--                android:layout_marginBottom="20dp"/>-->
+
+            <TextView
+                android:id="@+id/face_list_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/list_describe"
+                android:textAlignment="center" />
+
+            <!--            <FrameLayout-->
+            <!--                android:id="@+id/face_register_view"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+            <!--                <View-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent" />-->
+            <!--                <Button-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:onClick="register"-->
+            <!--                    android:background="@color/red"-->
+            <!--                    android:textColor="@color/white"-->
+            <!--                    android:text="@string/register" />-->
+            <!--            </FrameLayout>-->
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/face_right_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="0dp">
+            <TextureView
+                android:id="@+id/single_camera_texture_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.moli.faceDetect.widget.FaceRectView
+                android:id="@+id/single_camera_face_rect_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

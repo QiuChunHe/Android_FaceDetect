@@ -4,7 +4,7 @@ import android.hardware.Camera;
 import android.util.Log;
 
 import com.moli.faceDetect.model.FacePreviewInfo;
-import com.arcsoft.arcfacedemo.util.TrackUtil;
+import com.moli.faceDetect.util.TrackUtil;
 import com.arcsoft.face.ErrorInfo;
 import com.arcsoft.face.FaceEngine;
 import com.arcsoft.face.FaceFeature;

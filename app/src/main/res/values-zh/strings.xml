@@ -1,110 +1,110 @@
 <resources>
-    <!--app name-->
-    <string name="app_name">ArcFaceDemo</string>
+    <!--app名称-->
+    <string name="app_name">ArcFace</string>
 
     <!--home-->
-    <string name="list_describe">No facial recognition data available</string>
+    <string name="list_describe">未有人脸识别数据</string>
     <!--register-->
-    <string name="sex_man">man</string>
-    <string name="sex_female">female</string>
+    <string name="sex_man">男</string>
+    <string name="sex_female">女</string>
 
-    <!--settings、choose function page-->
-    <string name="page_preview">face attributes detect(video)</string>
-    <string name="page_ir_preview">ir liveness detect(video)</string>
-    <string name="page_face_recognize">face compare 1:n(video vs database,rgb liveness detect)</string>
-    <string name="page_ir_face_recognize">face compare 1:n(video vs database,ir liveness detect)</string>
-    <string name="page_single_image">face attributes detect(image)</string>
-    <string name="page_multi_image">face compare 1:n(image vs image)</string>
-    <string name="page_face_manage">face manage</string>
-    <string name="get_device_finger_failed">get device finger failed, code is: %d</string>
-    <string name="choose_detect_degree">choose video-mode detect degree</string>
-    <string name="copy_device_fingerprint">copy device fingerprint</string>
-    <string name="device_fingerprint_copied">device fingerprint：：\n%s\n copied</string>
-    <string name="active_engine">active engine</string>
-    <string name="active_success">active success</string>
-    <string name="already_activated">already activated</string>
-    <string name="active_failed">active failed,code is %d</string>
-    <string name="library_not_found">library not found, please check if you put .so files into the project directory app\\src\\main\\jniLibs</string>
-    <string name="ft_op_0">only detect 0 degree in video mode</string>
-    <string name="ft_op_90">only detect 90 degree in video mode</string>
-    <string name="ft_op_180">only detect 180 degree in video mode</string>
-    <string name="ft_op_270">only detect 270 degree in video mode</string>
-    <string name="ft_op_all">detect all degrees in video mode</string>
+    <!--配置、功能选择界面-->
+    <string name="page_preview">人脸属性检测（视频）</string>
+    <string name="page_ir_preview">红外活体检测（视频）</string>
+    <string name="page_face_recognize">人脸比对1:n（视频vs人脸库，RGB活体）</string>
+    <string name="page_ir_face_recognize">人脸比对1:n（视频vs人脸库，IR活体）</string>
+    <string name="page_single_image">人脸属性检测（图片）</string>
+    <string name="page_multi_image">人脸比对1:n（图片vs图片）</string>
+    <string name="page_face_manage">人脸批量注册管理</string>
+    <string name="get_device_finger_failed">获取设备指纹失败，错误码：%d</string>
+    <string name="choose_detect_degree">选择视频模式检测角度</string>
+    <string name="copy_device_fingerprint">复制设备指纹信息</string>
+    <string name="device_fingerprint_copied">设备指纹信息：\n%s\n已复制</string>
+    <string name="active_engine">激活引擎</string>
+    <string name="active_success">激活引擎成功</string>
+    <string name="already_activated">引擎已激活，无需再次激活</string>
+    <string name="active_failed">引擎激活失败，错误码为 %d</string>
+    <string name="library_not_found">未找到库文件，请检查是否有将.so文件放至工程的 app\\src\\main\\jniLibs 目录下</string>
+    <string name="ft_op_0">视频模式仅检测0度</string>
+    <string name="ft_op_90">视频模式仅检测90度</string>
+    <string name="ft_op_180">视频模式仅检测180度</string>
+    <string name="ft_op_270">视频模式仅检测270度</string>
+    <string name="ft_op_all">视频模式全方向人脸检测</string>
 
     <!--（图片）注册 界面-->
-    <string name="chose_blum_image">blum</string>
-    <string name="choose_camera_image">camera</string>
-    <string name="please_enter_complete_information">please enter complete information</string>
+    <string name="chose_blum_image">选择相册图片</string>
+    <string name="choose_camera_image">选择相机</string>
+    <string name="please_enter_complete_information">请输入完整的信息</string>
 
-    <!--face attributes detect(image) page-->
-    <string name="start_process">process</string>
-    <string name="choose_local_image">choose local image</string>
-    <string name="processing">processing</string>
+    <!--人脸属性检测（图片） 界面-->
+    <string name="start_process">开始处理</string>
+    <string name="choose_local_image">选择本地图片</string>
+    <string name="processing">处理中</string>
 
-    <!--face compare 1:n(image vs image) page-->
-    <string name="choose_main_image">choose main image</string>
-    <string name="add_item_image">add item image</string>
-    <string name="notice_choose_main_img">please choose main image first</string>
-    <string name="compare_failed">compare failed!code is %d</string>
+    <!--人脸比对1:n（图片vs图片） 界面-->
+    <string name="choose_main_image">选择主图</string>
+    <string name="add_item_image">添加比对图</string>
+    <string name="notice_choose_main_img">请先选择主图</string>
+    <string name="compare_failed">比对失败，错误码为 %d</string>
 
-    <!--global get picture failed notification-->
-    <string name="get_picture_failed">failed to get picture!</string>
+    <!--各个界面获取本地图片失败提示-->
+    <string name="get_picture_failed">获取图片失败</string>
 
-    <!--global permission denied notification-->
-    <string name="permission_denied">permission denied!</string>
+    <!--各个界面获取权限失败时的提示-->
+    <string name="permission_denied">权限被拒绝！</string>
 
-    <!--global init failed notification-->
-    <string name="init_failed">init failed,code is %d</string>
-    <string name="engine_not_initialized">engine not initialized! code is %d</string>
+    <!--各个界面引擎初始化失败的提示-->
+    <string name="init_failed">引擎初始化失败，错误码为 %d</string>
+    <string name="engine_not_initialized">引擎未初始化，错误码为 %d</string>
 
-    <!--single/dual camera register&recognize page-->
-    <string name="register">register</string>
-    <string name="switch_camera">switch camera</string>
-    <string name="switch_camera_failed">switch camera failed</string>
-    <string name="notice_change_detect_degree">camera switched, if no face detected, please change face detect degree in homepage</string>
-    <string name="recognize_failed_notice">DENIED:%s</string>
-    <string name="recognize_success_notice">PASS:%s</string>
-    <string name="low_confidence_level">face low confidence level</string>
-    <string name="specific_engine_init_failed">%s init failed, code is:%d</string>
-    <string name="liveness_detect">liveness detect</string>
+    <!--单目、双目识别注册界面-->
+    <string name="register">注册</string>
+    <string name="switch_camera">切换相机</string>
+    <string name="switch_camera_failed">切换相机失败</string>
+    <string name="recognize_failed_notice">未通过:%s</string>
+    <string name="recognize_success_notice">通过:%s</string>
+    <string name="low_confidence_level">人脸置信度低</string>
+    <string name="specific_engine_init_failed">%s 初始化失败，错误码为:%d</string>
+    <string name="notice_change_detect_degree">相机已切换，若无法检测到人脸，需要在首页修改视频模式人脸检测角度</string>
+    <string name="liveness_detect">活体检测</string>
     <string name="camera_rgb">RGB CAMERA</string>
     <string name="camera_ir">IR CAMERA</string>
     <string name="camera_rgb_preview_size">RGB CAMERA\n%dx%d</string>
     <string name="camera_ir_preview_size">IR CAMERA\n%dx%d</string>
-    <string name="camera_error_notice">\npossible reason:open two cameras at the same time is not allowed on this device</string>
-    <string name="draw_ir_rect_mirror_horizontal">draw IR face rect mirror horizontal</string>
-    <string name="draw_ir_rect_mirror_vertical">draw IR face rect mirror vertical</string>
+    <string name="camera_error_notice">\n可能的原因：该设备不支持同时打开两个摄像头</string>
+    <string name="draw_ir_rect_mirror_horizontal">IR人脸框水平镜像绘制</string>
+    <string name="draw_ir_rect_mirror_vertical">IR人脸框垂直镜像绘制</string>
 
-    <!--batch process dialog-->
-    <string name="progress_dialog_batch_register">progress: %d / %d</string>
-    <string name="progress_dialog_registering_please_wait">registering,please wait</string>
+    <!--人脸批量注册进度框-->
+    <string name="progress_dialog_batch_register">进度: %d / %d</string>
+    <string name="progress_dialog_registering_please_wait">注册中，请稍等</string>
 
-    <string name="item_name">name:</string>
-    <string name="item_age">age:</string>
-    <string name="item_sex">sex:</string>
-    <string name="item_time">time:</string>
+    <string name="item_name">姓名:</string>
+    <string name="item_age">年龄:</string>
+    <string name="item_sex">性别:</string>
+    <string name="item_time">时间:</string>
 
-    <!--register dialog-->
-    <string name="person_name">name</string>
-    <string name="person_age">age</string>
-    <string name="person_sex">sex</string>
-    <string name="person_name_describe">please input name</string>
-    <string name="person_age_describe">please input age</string>
-    <string name="person_sex_describe">please input sex</string>
+    <!--注册弹窗-->
+    <string name="person_name">姓名</string>
+    <string name="person_age">年龄</string>
+    <string name="person_sex">性别</string>
+    <string name="person_name_describe">请输入姓名</string>
+    <string name="person_age_describe">请输入年龄</string>
+    <string name="person_sex_describe">请输入性别</string>
 
-    <!--batch process-->
-    <string name="ok">OK</string>
-    <string name="cancel">Cancel</string>
-    <string name="batch_process_notification_register">please put the images that need to register into directory \nsdcard/arcfacedemo/register</string>
-    <string name="batch_process_no_face_need_to_delete">no face need to delete</string>
-    <string name="batch_process_confirm_delete">delete those %d images and face features?</string>
-    <string name="batch_process_batch_register">batch register</string>
-    <string name="batch_process_notification">notification</string>
-    <string name="batch_process_clear_faces">clear faces</string>
-    <string name="batch_process_path_is_not_exists">path \n%s\n is not exists</string>
-    <string name="batch_process_path_is_not_dir">path \n%s\n is not a directory</string>
-    <string name="batch_process_processing_please_wait">process start,please wait</string>
-    <string name="batch_process_finished_info">process finished!\ntotal count =  %d \nsuccess count = %d \nfailed count = %d \nfailed images are in directory \' %s \'</string>
+    <!--批量处理-->
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="batch_process_notification_register">请将需要注册的图片放在\nsdcard/arcfacedemo/register\n目录下</string>
+    <string name="batch_process_no_face_need_to_delete">无人脸需要删除</string>
+    <string name="batch_process_confirm_delete">确认删除这%d张图片及人脸特征？</string>
+    <string name="batch_process_batch_register">批量注册</string>
+    <string name="batch_process_notification">提示</string>
+    <string name="batch_process_clear_faces">清空人脸库</string>
+    <string name="batch_process_path_is_not_exists">路径 \n%s\n 不存在</string>
+    <string name="batch_process_path_is_not_dir">路径 \n%s\n 不是文件夹</string>
+    <string name="batch_process_processing_please_wait">处理中，请稍等</string>
+    <string name="batch_process_finished_info">处理完成！\n处理总数 =  %d \n成功数 = %d \n失败数 = %d \n处理失败的图片已保存在文件夹 \' %s \'</string>
 
     <string name="app_permission_detail">
         <b>隐私政策</b>
@@ -185,6 +185,6 @@
 \n<b>10、联系我们</b>
 \n如果您对我们的隐私政策有任何疑问，请通过电子邮箱联系我们。
         \n
-    </string>
+</string>
 
 </resources>
